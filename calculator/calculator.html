@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            height: auto;
+            width:250px;
+            display: flex;
+            flex-direction: column;  
+            align-items: center;
+            padding: 50px;          
+        }
+        .number{
+            font-size: 200%;
+            color: aliceblue;
+            display: flex;
+            justify-content:flex-end;
+            width: 100%;
+    
+            margin-right: 50px;
+        }
+       
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+            gap: 12px;
+        }
+      
+
+        .cal {
+            color: aliceblue;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .a {
+            background-color: #ff9500;
+            color: white;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="number">
+            <h1>7744</h1>
+        </div>
+        <div class="buttons">
+        <div class="cal">C</div>
+        <div class="cal">+/-</div>
+        <div class="cal">%</div>
+        <div class="cal a">÷</div>
+
+        <div class="cal">7</div>
+        <div class="cal">8</div>
+        <div class="cal">9</div>
+        <div class="cal a">×</div>
+
+        <div class="cal">4</div>
+        <div class="cal">5</div>
+        <div class="cal">6</div>
+        <div class="cal a">-</div>
+
+        <div class="cal">1</div>
+        <div class="cal">2</div>
+        <div class="cal">3</div>
+        <div class="cal a">+</div>
+
+        <div class="cal zero">0</div>
+        <div class="cal">,</div>
+        <div class="cal a">=</div>
+        </div>
+    </div>
+</body>
+</html>

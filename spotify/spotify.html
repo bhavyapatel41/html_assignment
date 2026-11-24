@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="./spotify.css">
+  <style>
+    /* Global */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Layout */
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.left {
+  width: 280px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.data1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linemate {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.linemate:hover {
+    color: green;
+  background: #1f1f1f;
+}
+
+/* Right Section */
+.right {
+  flex: 1;
+  background: #1d1c1c;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Scrollbar */
+.right::-webkit-scrollbar {
+  width: 6px;
+}
+.right::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Section Titles */
+.good {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+}
+
+/* Playlist cards */
+.img, .img1 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  background: #2c2c2c;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.line:hover {
+  transform: scale(1.03);
+  color: green;
+}
+.line img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.mahiti {
+  font-size: 16px;
+  padding: 20px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Show Cards */
+.box {
+  background: #111;
+  width: 160px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+.box img {
+  width: 100%;
+  border-radius: 10px;
+}
+.box:hover {
+  transform: scale(1.05);
+  color: green;
+  background: #222;
+}
+.big {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.small {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Bottom Player */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-top: 1px solid #333;
+}
+
+.bimg {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bdata .big {
+  font-size: 14px;
+}
+.bdata .small {
+  font-size: 12px;
+  color: gray;
+}
+  </style>
+</head>
+<body>
+  <div class="main">
+    <!-- Sidebar -->
+    <div class="left">
+      <div class="logo">
+        <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891125/Spotify_logo_jbhabv.png" alt="Spotify Logo">
+      </div>
+
+      <div class="data1">
+        <div class="linemate">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891125/Home_yf0dzz.png" width="25" alt="">
+          <div>Home</div>
+        </div>
+        <div class="linemate">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891126/Search_lcn17q.png" width="25" alt="">
+          <div>Search</div>
+        </div>
+        <div class="linemate">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/Your_library_ss2vmb.png" width="25" alt="">
+          <div>Your Library</div>
+        </div>
+      </div>
+
+      <div class="data1">
+        <div class="linemate">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891126/Create_uvvdw4.png" width="25" alt="">
+          <div>Create Playlist</div>
+        </div>
+        <div class="linemate">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891126/Group_2_r7xbuq.png" width="25" alt="">
+          <div>Liked Songs</div>
+        </div>
+        <div class="linemate">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/your_episodes_td0uqi.png" width="25" alt="">
+          <div>Your Episodes</div>
+        </div>
+      </div>
+
+      <div class="data1">
+        <div class="linemate"><div class="jagya">FAV</div></div>
+        <div class="linemate"><div class="jagya">Daily Mix 1</div></div>
+        <div class="linemate"><div class="jagya">Discover Weekly</div></div>
+        <div class="linemate"><div class="jagya">Malayalam</div></div>
+        <div class="linemate"><div class="jagya">Dance / Electronix Mix</div></div>
+        <div class="linemate"><div class="jagya">EDM / Popular</div></div>
+      </div>
+
+      <div class="data1">
+        <div class="linemate">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891123/grommet-icons_install-option_fave9t.png" width="25" alt="">
+          <div>Install App</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <nav class="nav">
+        <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891125/top_arrow_navigation_o2hhe0.png" width="100" alt="">
+        <div class="id">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891123/User_bjgluq.png" alt="">
+        </div>
+      </nav>
+
+      <div class="good">Good morning</div>
+      <div class="img">
+        <div class="line">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/Liked_nmarol.png" alt="">
+          <div class="mahiti">Liked Songs</div>
+        </div>
+        <div class="line">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/image4_wfjphw.png" alt="">
+          <div class="mahiti">Neffex Playlist</div>
+        </div>
+        <div class="line">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/image3_ttk1ho.png" alt="">
+          <div class="mahiti">K / DA</div>
+        </div>
+      </div>
+
+      <div class="img1">
+        <div class="line">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891126/image1_fpax1b.png" alt="">
+          <div class="mahiti">Liked Songs</div>
+        </div>
+        <div class="line">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891123/image2_h9fipu.png" alt="">
+          <div class="mahiti">Dance / Electronic Mix</div>
+        </div>
+      </div>
+
+      <div class="good">Shows you might like</div>
+      <div class="img">
+        <div class="box">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891125/image9_wag3zy.png" alt="">
+          <div class="big">Weekly Motivation</div>
+          <div class="small">Ben Ina Scott</div>
+        </div>
+        <div class="box">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/image8_urz6h1.png" alt="">
+          <div class="big">Weekly Motivation</div>
+          <div class="small">Ibn Hussain Aleen</div>
+        </div>
+        <div class="box">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891125/image7_fyswwl.png" alt="">
+          <div class="big">Words beyond act...</div>
+          <div class="small">Samuel Scott</div>
+        </div>
+        <div class="box">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/image6_if19rp.png" alt="">
+          <div class="big">The Alexa Show</div>
+          <div class="small">Adriana Tom</div>
+        </div>
+        <div class="box">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/image5_mpbte5.png" alt="">
+          <div class="big">The Stories of Ma...</div>
+          <div class="small">Lexus</div>
+        </div>
+        <div class="box">
+          <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891126/image10_od0vn7.png" alt="">
+          <div class="big">Motivation Daily b...</div>
+          <div class="small">Georgina Martha</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Player -->
+  <div class="bottom">
+    <div class="bimg">
+      <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891123/image11_nzhj45.png" width="90" style="border-radius: 15px;" alt="">
+      <div class="bdata">
+        <div class="big">Dreaming On</div>
+        <div class="small">NEFFEX</div>
+      </div>
+      <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891124/bx_bxs-heart_p5fsc5.png" width="30" alt="">
+    </div>
+    <div class="bimg">
+      <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891123/Music_Player_Options_yrljcx.png" width="600" alt="">
+    </div>
+    <div class="bimg">
+      <img src="https://res.cloudinary.com/dsuhb6swy/image/upload/v1758891123/Right_options_svkskd.png" width="300" alt="">
+    </div>
+  </div>
+  <br><br><br><br><br>
+</body>
+</html>

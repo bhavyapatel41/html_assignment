@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+
+    <style>
+    .main{
+
+    background-color: rgb(255, 255, 255);
+   width: 700px;
+   height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+body{
+    background-color: black;
+}
+table{
+    width: 70px;
+    margin: 0px;
+}
+
+.sudoku{
+    
+    display: flex;
+    width: 210px;
+    height: 210px;
+    flex-wrap: wrap;
+    
+}
+
+.answer{
+    
+    display: flex;
+    width: 210px;
+    height: 210px;
+    flex-wrap: wrap;
+    
+}
+
+.color{
+    background-color: rgb(145, 224, 192);
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+      
+        <div class="sudoku">
+            <h1 style="margin-left: 30px;">SUDOKU</h1>
+            
+            <table border="" cellspacing="0">
+              <tr>
+                <th>8</th>
+                <th> </th>
+                <th>6</th>
+            </tr>
+              <tr>
+                <th> </th>
+                <th>4</th>
+                <th> </th>
+            </tr>
+              <tr>
+                <th>2</th>
+                <th> </th>
+                <th> </th>
+            </tr>
+            </table>
+            <table border="" class="color" cellspacing="0">
+              <tr>
+                <th> </th>
+                <th> </th>
+                <th>3</th>
+            </tr>
+              <tr>
+                <th></th>
+                <th>1</th>
+                <th></th>
+            </tr>
+              <tr>
+                <th>8</th>
+                <th>7</th>
+                <th>5</th>
+            </tr>
+            </table>
+            <table border=""  cellspacing="0">
+              <tr>
+                <th>1</th>
+                <th></th>
+                <th>5</th>
+            </tr>
+              <tr>
+                <th>3</th>
+                <th> </th>
+                <th>2</th>
+            </tr>
+              <tr>
+                <th> </th>
+                <th>9</th>
+                <th> </th>
+            </tr>
+            </table>
+            <table border="" class="color" cellspacing="0">
+                <tr>
+                <th> </th>
+                <th>6</th>
+                <th> </th>
+              </tr>
+                <tr>
+                <th> </th>
+                <th> </th>
+                <th>4</th>
+              </tr>
+                <tr>
+                <th>7</th>
+                <th> </th>
+                <th> </th>
+              </tr>
+              </table>
+              <table border="" cellspacing="0">
+                <tr>
+                <th> </th>
+                <th>2</th>
+                <th> </th>
+              </tr>
+                <tr>
+                <th>9</th>
+                <th> </th>
+                <th>8</th>
+              </tr>
+                <tr>
+                <th> </th>
+                <th>1</th>
+                <th> </th>
+              </tr>
+            </table>
+            <table border="" class="color" cellspacing="0">
+              <tr>
+                <th>8</th>
+                <th></th>
+                <th>1</th>
+            </tr>
+              <tr>
+                <th></th>
+                <th>3</th>
+                <th></th>
+            </tr>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>9</th>
+            </tr>
+            </table>
+            <table border="" cellspacing="0">
+                <tr>
+                <th>7</th>
+                <th></th>
+                <th>2</th>
+              </tr>
+                <tr>
+                <th></th>
+                <th>6</th>
+                <th>9</th>
+              </tr>
+                <tr>
+                <th>3</th>
+                <th>8</th>
+                <th></th>
+              </tr>
+              </table>
+              <table border="" class="color" cellspacing="0">
+                <tr>
+                <th></th>
+                <th>4</th>
+                <th>1</th>
+              </tr>
+                <tr>
+                <th>2</th>
+                <th></th>
+                <th>7</th>
+              </tr>
+                <tr>
+                <th>6</th>
+                <th>3</th>
+                <th></th>
+              </tr>
+              </table>
+              <table border="" cellspacing="0">
+                <tr>
+                <th>9</th>
+                <th></th>
+                <th>8</th>
+              </tr>
+                <tr>
+                <th></th>
+                <th>5</th>
+                <th>1</th>
+              </tr>
+                <tr>
+                <th>4</th>
+                <th>2</th>
+                <th></th>
+              </tr>
+              </table>
+          
+        </div>
+        <div class="answer">
+            <h1 style="margin-left: 30px;">ANSWER</h1>
+            
+            <table border=""  cellspacing="0">
+                <tr>
+                <th>2</th>
+                <th>7</th>
+                <th>4</th>
+              </tr>
+                <tr>
+                <th>9</th>
+                <th>3</th>
+                <th>1</th>
+              </tr>
+                <tr>
+                <th>6</th>
+                <th>8</th>
+                <th>5</th>
+              </tr>
+              </table>
+              <table border="" class="color" cellspacing="0">
+                <tr>
+                <th>3</th>
+                <th>1</th>
+                <th>8</th>
+              </tr>
+                <tr>
+                <th>7</th>
+                <th>2</th>
+                <th>6</th>
+              </tr>
+                <tr>
+                <th>5</th>
+                <th>9</th>
+                <th>4</th>
+              </tr>
+              </table>
+              <table border="" cellspacing="0">
+                <tr>
+                <th>8</th>
+                <th>6</th>
+                <th>2</th>
+              </tr>
+                <tr>
+                <th>4</th>
+                <th>5</th>
+                <th>7</th>
+              </tr>
+                <tr>
+                <th>1</th>
+                <th>3</th>
+                <th>9</th>
+              </tr>
+              </table>
+              <table border="" class="color" cellspacing="0">
+                <tr>
+                <th>9</th>
+                <th>5</th>
+                <th>7</th>
+              </tr>
+                <tr>
+                <th>6</th>
+                <th>4</th>
+                <th>3</th>
+              </tr>
+                <tr>
+                <th>2</th>
+                <th>8</th>
+                <th>1</th>
+              </tr>
+              </table>
+              <table border="" cellspacing="0">
+                <tr>
+                <th>7</th>
+                <th>3</th>
+                <th>6</th>
+              </tr>
+                <tr>
+                <th>8</th>
+                <th>1</th>
+                <th>2</th>
+              </tr>
+                <tr>
+                <th>4</th>
+                <th>9</th>
+                <th>5</th>
+              </tr>
+              </table>
+              <table border="" class="color" cellspacing="0">
+                <tr>
+                <th>5</th>
+                <th>2</th>
+                <th>9</th>
+              </tr>
+                <tr>
+                <th>1</th>
+                <th>7</th>
+                <th>8</th>
+              </tr>
+                <tr>
+                <th>3</th>
+                <th>6</th>
+                <th>4</th>
+              </tr>
+              </table>
+              <table border="" cellspacing="0">
+                <tr>
+                <th>4</th>
+                <th>8</th>
+                <th>3</th>
+              </tr>
+                <tr>
+                <th>2</th>
+                <th>9</th>
+                <th>5</th>
+              </tr>
+                <tr>
+                <th>7</th>
+                <th>1</th>
+                <th>6</th>
+              </tr>
+              </table>
+              <table border="" class="color" cellspacing="0">
+                <tr>
+                <th>6</th>
+                <th>4</th>
+                <th>2</th>
+              </tr>
+                <tr>
+                <th>8</th>
+                <th>5</th>
+                <th>7</th>
+              </tr>
+                <tr>
+                <th>9</th>
+                <th>3</th>
+                <th>1</th>
+              </tr>
+              </table>
+              <table border="" cellspacing="0">
+                <tr>
+                <th>1</th>
+                <th>7</th>
+                <th>5</th>
+              </tr>
+                <tr>
+                <th>3</th>
+                <th>6</th>
+                <th>8</th>
+              </tr>
+                <tr>
+                <th>2</th>
+                <th>4</th>
+                <th>9</th>
+              </tr>
+            </tr>
+            </table>
+          
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>
