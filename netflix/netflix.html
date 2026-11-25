@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="netflix.css">
+    <style>
+        body{
+    background-color: black;
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0) 70%, black 100%), url(../netflix/assets/Title-Image.png);
+    width: 99%;
+    height: 100vh;
+      
+     background-size: cover;
+    background-repeat: no-repeat;
+     font-family: Arial, Helvetica, sans-serif ;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.name-logo{
+    margin-top: 15px;
+    margin-left: 4cqw;
+    width: 90px;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif ;
+    color: white;
+   cursor: pointer;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+a:hover{
+    transform: scale(1.1);
+}
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.i{
+    margin-right: 20px;
+    cursor: pointer;
+ transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+.i:hover{
+    transform:scale(1.2)
+}
+
+.icons{
+    margin-right: 20px;
+}
+.show{
+    display: flex;
+
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    color: white;
+    margin-top: 320px;
+    margin-left: 60px;
+    
+}
+.show img{
+    margin-right: 10px;
+    width: 20px;
+    height: 30px;
+}
+.maid{
+    color: white;
+    margin-left: 50px;
+    font-size: 150px;
+    font-weight: bold;
+}
+.button{
+
+    display: flex;
+    margin-left: 60px;
+}
+
+#play{
+    border-radius: 3px;
+    width: 85px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke ;
+    color: black;
+    cursor: pointer;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+#play:hover{
+    transform: scale(1.1);
+}
+#more{
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 179, 179) ;
+    color: white;
+    margin-left: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+#more:hover{
+    transform: scale(1.1);
+}
+.add{
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+}
+.see{
+    margin-left: 60px;
+    color: white;
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+    align-items: center;
+}
+
+.cardrow1{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 55px;
+    margin-bottom: 70px;
+}
+
+.cardrow2{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+}
+.pic{
+    cursor: pointer;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pic:hover{
+     transform: scale(1.1);
+}
+
+#card{
+margin-left: 10px ;
+margin-top: 20px;
+cursor: pointer;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card:hover{
+    transform: scale(1.1);
+}
+.social{
+    margin-left: 310px;
+}
+th{
+    padding-right: 90px;
+}
+
+#ic{
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+table{
+    display: flex;
+ 
+   line-height: 50px;
+    color: grey;
+    margin-left: 300px ;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    width: 110px;
+    height: 40px;
+    color: white;
+    border: 1px solid;
+    margin-left: 350px;
+}
+#copy{
+    margin-top: 20px;
+    color: white;
+    opacity: 0.5;
+    margin-left: 350px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="start">
+
+            <img class="name-logo" src="../netflix/assets/NetflixLogoSvg.png">
+                
+
+
+            <a style="font-weight: bold;" href="#">Start</a>
+            <a href="#">Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">New</a>
+            <a href="#">My List</a>
+        </div>
+
+        <div>
+            <div class="icons">
+                <img class="i" src="../netflix/assets/Search.png">
+                <img class="i" src="../netflix/assets/GiftBox.png">
+                <img class="i" src="../netflix/assets/NotificationBell.png">
+                <img class="i" src="../netflix/assets/ProfileIMG.png">
+                <img class="i" src="../netflix/assets/DownArrow.png">
+            
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="show">
+           <img class="i" src="../netflix/assets/Netflix_Symbol_RGB 1.png">
+            S H O W
+        </div>
+    </div>
+    <div class="maid">
+        MAID
+    </div>
+    <div class="button">
+        <div id="play">
+            <img style="width: 20px;" src="../netflix/assets/Play.png">
+                &nbsp;
+            Play
+        </div>
+        <div id="more">
+            <img style="width: 20px;" src="../netflix/assets/Vector.png">&nbsp;
+            More info
+        </div>
+    </div>
+
+    <div class="add">
+        <img src="assets/Add.png">
+    </div>
+    <div class="see">
+        See again
+        <img style="width: 20px; " src="assets/ArrowRight.png">
+    </div>
+
+    <div class="cardrow1">
+        <div id="card">
+            <img src="assets/section 1.1.png">
+        </div>
+        <div id="card">
+            <img src="assets/section 1.2.png">
+        </div>
+        <div id="card">
+            <img src="assets/section 1.3.png">
+        </div>
+        <div id="card">
+            <img src="assets/section 1.4.png">
+        </div>
+        <div id="card">
+            <img src="assets/section 1.5.png">
+        </div>
+    </div>
+
+    <div class="see">
+        Top 10 in your country
+        <img style="width: 20px; " src="../netflix/assets/ArrowRight.png">
+    </div>
+
+    <div class="cardrow2">
+
+        <img style="height: 190px;" src="../netflix/assets/Rank - 01.png">
+            
+        <img class="pic" src="../netflix/assets/section 2.1.png">
+
+        <img style="height: 190px;" src="../netflix/assets/Rank - 02.png">
+       <img class="pic" src="../netflix/assets/section 2.2.png">
+
+        <img style="height: 190px;" src="../netflix/assets/Rank - 03.png">
+        <img class="pic" src="../netflix/assets/section 2.3.png">
+
+        <img style="height: 190px;" src="../netflix/assets/Rank - 04.png">
+        <img class="pic" src="../netflix/assets/section 2.4.png">
+
+
+       <img style="height: 190px;" src="../netflix/assets/Rank - 05.png">
+    <img class="pic" src="../netflix/assets/section 2.5.png">
+
+
+    </div>
+
+    <div class="see">
+        Treading Now
+        <img style="width: 20px; " src="../netflix/assets/ArrowRight.png">
+    </div>
+
+
+    <div class="cardrow1">
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 3.1.png">
+        </div>
+
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 3.2.png">
+        </div>
+
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 3.3.png">
+        </div>
+
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 3.4.png">
+        </div>
+
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 3.5.png">
+        </div>
+
+    </div>
+
+    <div class="see">
+        Sci-fi shows
+        <img style="width: 20px; " src="../netflix/assets/ArrowRight.png">
+            
+    </div>
+
+    <div class="cardrow1">
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 4.1.png">
+        </div>
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 4.2.png">
+        </div>
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 4.3.png">
+        </div>
+        <div id="card">
+            <img class="pic" src="../netflix/assets/section 4.4.png">
+        </div>
+        <div id="card">
+           <img class="pic" src="../netflix/assets/section 4.5.png">
+        </div>
+
+    </div>
+
+    <div class="social">
+        <img id="ic" src="../netflix/assets/facebook.png">
+        <img id="ic" src="../netflix/assets/instagram.png">
+        <img id="ic" src="../netflix/assets/twitter.png">
+        <img id="ic" src="../netflix/assets/youtube.png">
+
+    </div>
+
+
+    <table>
+        <tr>
+            <th>Seslendireme ve Alt Yazi</th>
+            <th>Sesli Betimleme</th>
+            <th>Yardim Merkezi</th>
+            <th>Hediye kartlari</th>
+        </tr>
+        <tr>
+            <th>Medya Merkezi</th>
+            <th>Yatirimci iliskileri</th>
+            <th>is imkanlari</th>
+            <th>kullanim Kosullari</th>
+        </tr>
+        <tr>
+            <th>Gizlilik</th>
+            <th>Yasai Hukumler</th>
+            <th>Cerez Tercihleri</th>
+            <th>Kurumsai Bilgiler</th>
+        </tr>
+        <tr>
+            <th>Bize Ulasin</th>
+        </tr>
+    </table>
+    <div class="last">
+        Hizmet Kodu
+    </div>
+    <div id="copy">
+        <p>1997-2021 Netflix, Inc. {i-062d573a0ee099242}</p>
+    </div>
+
+
+</body>
+
+</html>

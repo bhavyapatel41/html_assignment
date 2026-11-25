@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in</title>
+    <link rel="stylesheet" href="amazon.css">
+    <style>
+        .main{
+width: 100%;
+height: 100%;
+font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+background-color: rgb(41, 41, 51);
+width: 100%;
+height:4% ;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: white;
+}
+.location{
+    display: flex;
+}
+.search{
+    background-color: aliceblue;
+    color: gray;
+    height: 40px;
+    width: 600px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 10px;
+}
+.nav2{
+background-color: rgb(17, 46, 63);
+
+height:2% ;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: white;
+padding-left: 20px;
+}
+p{
+    display: inline;
+    margin-right: 4px;
+    font-size: small;
+}
+.body1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 1%;
+    width: 94%;
+    height: 94%;
+    padding: 2%;
+    padding-bottom: 0;
+    background-image: url(../amazon/assets/background\ picture.png);
+    
+}
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     width: 100%;
+     padding-top: 7%;
+     padding-bottom: 8%;
+}
+.card1{
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box1{
+    background-color: aliceblue;
+    
+    width: 22%;
+    height: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+.box11{
+    width: 22%;
+    height: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+.inbox{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40%;
+}
+    </style>
+    
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="nav">
+
+            <div style="padding-left: 20px;">
+                <img src="../amazon/assets/logo.png">
+            </div>
+
+            <div class="location">
+
+                <div>
+                    <img src="../amazon/assets/location.png"  width="30px">
+                </div>
+                <div>
+                    <p style="color: gray; display: inline;">Hello</p><br>
+                    <h4 style="display: inline;">Select your address</h4>
+                </div>
+
+            </div>
+
+            <div class="search">
+
+                <div
+                    style="border: 1px solid; height: 40px;padding-left: 20px; border-start-start-radius: 10px; border-bottom-left-radius:10px ;">
+                    <p>All <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNGQ0ZDRkIiBkPSJtNyAxMGw1IDVsNS01eiIvPjwvc3ZnPg=="
+                            alt="" width="15px"></p>
+                </div>
+                <div
+                    style="background-color: orange; height: 20px; padding-right: 20px;padding: 10px;border-top-right-radius: 10px; border-bottom-right-radius:10px ;">
+                    <img src="../amazon/assets/search icon.png" width="25px">
+                </div>
+
+            </div>
+
+            <div class="india">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSI3MiIgdmlld0JveD0iMCAwIDcyIDcyIj48cGF0aCBmaWxsPSIjNWM5ZTMxIiBkPSJNNSAxN2g2MnYzOEg1eiIvPjxwYXRoIGZpbGw9IiNlMjcwMjIiIGQ9Ik01IDE3aDYydjEzSDV6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTUgMzBoNjJ2MTJINXoiLz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMxZTUwYTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTM2LjI5NiAzNC44OTZMMzggMzIuNTM2bC0xLjE5MiAyLjY1NkwzOS40NjQgMzRsLTIuMzYgMS43MDRMNDAgMzZsLTIuODk2LjI5NkwzOS40NjQgMzhsLTIuNjU2LTEuMTkyTDM4IDM5LjQ2NGwtMS43MDQtMi4zNkwzNiA0MGwtLjI5Ni0yLjg5NkwzNCAzOS40NjRsMS4xOTItMi42NTZMMzIuNTM2IDM4bDIuMzYtMS43MDRMMzIgMzZsMi44OTYtLjI5NkwzMi41MzYgMzRsMi42NTYgMS4xOTJMMzQgMzIuNTM2bDEuNzA0IDIuMzZMMzYgMzJ6IiBzdHJva2Utd2lkdGg9IjEiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjM2IiByPSI1IiBmaWxsPSJub25lIiBzdHJva2U9IiMxZTUwYTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTUgMTdoNjJ2MzhINXoiLz48L3N2Zz4="
+                    alt="india" width="40px">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNyAxMGw1IDVsNS01eiIvPjwvc3ZnPg=="
+                    alt="" width="25px">
+            </div>
+
+            <div>
+                <p style="display: inline;">Hello.Sign in</p><br>
+                <h3 style="display: inline;">Account & Lists <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNyAxMGw1IDVsNS01eiIvPjwvc3ZnPg=="
+                        alt="" width="20px"></h3>
+            </div>
+
+            <div>
+                <p style="display: inline;">Returns</p><br>
+                <h3 style="display: inline;">& Orders <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNyAxMGw1IDVsNS01eiIvPjwvc3ZnPg=="
+                        alt="" width="20px"></h3>
+            </div>
+
+            <div style="padding-right: 20px;">
+                <img src="../amazon/assets/cart icon.png"
+                    alt="" width="40px">
+                <p style="display: inline;">Cart</p>
+            </div>
+
+        </div>
+
+        <div class="nav2">
+
+            <div>
+                <img src="../amazon/assets/ham burger icon.png"
+                    alt="menu">
+                <h3 style="display: inline;">All</h3>
+            </div>
+
+            <div>
+                <p>Best Seller</p>
+                <p>Mobiles</p>
+                <p>Customer Service</p>
+                <p>Today's Deals</p>
+                <p>Fashion</p>
+                <p>Electronics</p>
+                <p>Books</p>
+                <p>Prime</p>
+                <p>New Relwases</p>
+                <p>Home & Kitchen</p>
+                <p>Amazon Pay</p>
+            </div>
+
+            <div style="margin-left:210px ;">
+                <img src="../amazon/assets/lion.png"
+                    alt="lion" width="100px">
+            </div>
+
+            <div>
+                <div>
+                    <h3 style="display: inline;">prime day</h3>
+                </div>
+                <div style="display: flex;">
+                    <div><img
+                            src="../amazon/assets/amazon design.png"
+                            alt="prim" width="60px"></div>
+                    <div>
+                        <p>23<sup>rd</sup>-24<sup>th</sup> July</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="../amazon/assets/search icon.png"
+                    alt="arro" width="12px">
+            </div>
+
+        </div>
+
+        <div class="body1">
+
+            <div class="arrow">
+                <div><img
+                        src="../amazon/assets/left arrow.png"
+                        alt=""></div>
+                <div><img
+                        src="../amazon/assets/right arrow.png"
+                        alt="rarro"></div>
+            </div>
+
+            <div class="card1">
+                <div class="box1">
+
+                    <h2 style="width: 100%;">Upgrade your home | Amazon Brands & more</h2>
+
+                    <div>
+                        <img src="../amazon/assets/image 17.png"
+                            alt="" width="125px" style="display: block;">
+                        <p>Smart LED TVs </p>
+                    </div>
+                    <div>
+                        <img src="../amazon/assets/image 18.png"
+                            alt="" width="125px" style="display: block;">
+                        <p>Appliances</p>
+                    </div>
+                    <div>
+                        <img src="../amazon/assets/image 20.png"
+                            alt="" width="125px" style="display: block;">
+                        <p>Furniture</p>
+                    </div>
+                    <div>
+                        <img src="../amazon/assets/image 19.png"
+                            alt="" width="125px" style="display: block;">
+                        <p>Kitchen products</p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="box1">
+
+                    <h2 style="width: 100%;">Revamp your home in style</h2>
+
+                    <div>
+                        <img src="../amazon/assets/image 25.png"
+                            alt="" width="125px" style="display: block;">
+                        <p>Bedsheets, curtains & more</p>
+                    </div>
+                    <div>
+                        <img src="../amazon/assets/image 26.png"
+                            alt="" width="125px" style="display: block;">
+                        <p>Home decoration</p>
+                    </div>
+                    <div>
+                        <img src="../amazon/assets/image 22.png"
+                            alt="" width="125px" style="display: block;">
+                        <p>Home storage</p>
+                    </div>
+
+                    <div>
+                        <img src="../amazon/assets/image 21.png"
+                            alt="" width="125px" style="display: block;">
+                        <p>Lighting solutions</p>
+                    </div>
+
+                </div>
+                <div class="box1">
+
+                    <h2 style="width: 100%;">Up to 70% off | clearance store</h2>
+
+                    <div>
+                        <img src="../amazon/assets/image 24.png"
+                            alt="" width="250px">
+                    </div>
+
+                </div>
+                <div class="box11">
+
+                    <div class="inbox">
+                        <h2 style="width: 100%;">Sign in for your best exprience</h2>
+                        <button
+                            style="background-color: yellow; margin-bottom: 10px; width: 200px; border: 0; border-radius: 10px;">Sign
+                            in securely</button>
+                    </div>
+
+                    <div>
+                        <img src="../amazon/assets/image 28.png"
+                            alt="" width="250px">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

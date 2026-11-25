@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidz Worlds</title>
+    <link rel="stylesheet" href="kidz_world.css">
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../kidz/kw-background.png);
+    background-size: 100% 25%;
+
+    background-repeat: no-repeat;
+    background-position-y: 5%;
+}
+
+
+.kids {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+
+.kart {
+    width: 40px;
+}
+
+.dis {
+    margin-top: 200px;
+}
+
+.game {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+span {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+}
+
+.shop {
+    color: white;
+    margin-left: 40px;
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.new {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+
+
+#cart {
+
+    width: 15px;
+    height: 15px;
+
+}
+
+.allc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gcard {
+    display: flex;
+    justify-content: space-around;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.buy {
+    border-radius: 3px;
+    color: white;
+    width: 45px;
+    height: 20px;
+    background-color: rgb(140, 137, 244);
+}
+
+.card {
+    width: 170px;
+    height: 280px;
+    margin-left: 30px;
+    font-size: small;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+}
+
+.card2 {
+    width: 250px;
+    height: 280px;
+    margin-left: 30px;
+    font-size: small;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="">
+            <img class="kids" src="../kidz/kw-logo.png" alt="">
+        </div>
+        <div>
+            <img class="kart" src="../kidz/cart-icon.png" alt="">
+            <span>Cart Items(1)</span>
+        </div>
+    </div>
+
+    <div class="shop">
+        <h1>
+            Shop. <br>
+            Have Fun. <br>
+            Repeat. <br>
+            <span class="new">#NewAndNow</span>
+        </h1>
+    </div>
+
+    <h3 class="dis" style="margin-left: 50px; font-size: 25px;"><b>Discover New Books</b></h3>
+
+    <div class="allc">
+
+        <div class="card">
+            <img id="img" src="../kidz/book1.png" alt="">
+            <div class="text">
+                <p><b>This was our pact</b></p>
+                <p>Ryan Andrews</p>
+                <div class="order"><b>$7.49</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img id="img" src="../kidz/book2%20(1).png" alt="">
+            <div class="text">
+                <p><b>The famous five</b></p>
+                <p>Guid Blyton</p>
+                <div class="order"><b>$4.59</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img id="img" src="../kidz/book3.png" alt="">
+            <div class="text">
+                <p><b>Matlida</b></p>
+                <p>Roald Dahl</p>
+                <div class="order"><b>$6.80</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img id="img" src="../kidz/book4.png" alt="">
+            <div class="text">
+                <p><b>Harry Potter</b></p>
+                <p>JK Rowling</p>
+                <div class="order"><b>$10</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img id="img" src="../kidz/book5.png" alt="">
+            <div class="text">
+                <p><b>For Young Readers</b></p>
+                <p>Ruskin Bond</p>
+                <div class="order"><b>$7.29</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img id="img" src="../kidz/book6.png" alt="">
+            <div class="text">
+                <p><b>Wimpy Kid - DIY</b></p>
+                <p>Jeff Kinney</p>
+                <div class="order"><b>$4.99</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="game">
+        <h3><b>Discover New Games</b></h3>
+    </div>
+
+    <div class="gcard">
+
+        <div class="card2">
+            <img id="img2" src="../kidz/dart-board.png" alt="">
+            <div class="text">
+                <p><b>Dart Board</b></p>
+                <p>Wooden board, 16 inches</p>
+                <div class="order"><b>$17.49</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img id="img2" src="../kidz/connect-four.png" alt="">
+            <div class="text">
+                <p><b>Connect 4</b></p>
+                <p>Board game, multiplayer</p>
+                <div class="order"><b>$19.99</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img id="img2" src="../kidz/jenga.png" alt="">
+            <div class="text">
+                <p><b>Jenga</b></p>
+                <p>Wooden blocks, 54 pieces</p>
+                <div class="order"><b>$20.99</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img id="img2" src="../kidz/monopoly.png" alt="">
+            <div class="text">
+                <p><b>Monopoly</b></p>
+                <p>1.61 x 15.75 x 10.51 inches</p>
+                <div class="order"><b>$19.49</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="game">
+        <h3><b>Handmade with love</b></h3>
+    </div>
+
+    <div class="gcard">
+
+        <div class="card2">
+            <img id="img2" src="../kidz/bookmarks.png" alt="">
+            <div class="text">
+                <p><b>Bookmarks</b></p>
+                <p>Handmade with love</p>
+                <div class="order"><b>$12.49</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img id="img2" src="../kidz/birthday-card.png" alt="">
+            <div class="text">
+                <p><b>Birthday card</b></p>
+                <p>Handmade with love</p>
+                <div class="order"><b>$19.99</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img id="img2" src="../kidz/stuffed-toy.png" alt="">
+            <div class="text">
+                <p><b>Stuffed toys</b></p>
+                <p>Handmade with love</p>
+                <div class="order"><b>$15.99</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img id="img2" src="../kidz/dream-catcher.png" alt="">
+            <div class="text">
+                <p><b>Dream catcher drawing</b></p>
+                <p>Handmade with love</p>
+                <div class="order"><b>$18.49</b>
+                    <div class="buy">
+                        <b>Add</b><img id="cart" src="../kidz/cart-icon-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
